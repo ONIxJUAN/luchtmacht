@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/minigames/pilot.css" />
+    <link rel="stylesheet" href="/assets/css/minigames/loss.css" />
+    <link rel="stylesheet" href="/assets/css/minigames/gamewin.css" />
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">  
+
+    <title>Minigame: Pilot</title>
+  </head>
+  <body class="pilot">
+    <main class="pilot__container">
+      <!-- Timer -->
+      <div class="pilot__container--box">
+        <p class="pilot__container--timer"> <span id="timer">0</span></p>
+      </div>
+
+      <!-- Choose plane -->
+
+      <section class="choose-plane">
+        <h2>Kies een vliegtuig.</h2>
+        <div class="planes">
+          <img
+            src="/assets/images/minigames/pilot/planes/normal-plane.svg"
+            alt="normal-plane"
+            class="plane"
+          />
+          <img
+            src="/assets/images/minigames/pilot/planes/medium-plane.svg"
+            alt="medium-plane"
+            class="plane"
+          />
+          <img
+            src="/assets/images/minigames/pilot/planes/hard-plane.svg"
+            alt="hard-plane"
+            class="plane"
+          />
+      </section>
+
+      <!-- Game -->
+      <section class="game">
+          <div id="objects"></div>
+          
+          <figure id="plane" class="plane">
+            <img
+              src="/assets/images/minigames/pilot/planes/normal-plane.svg"
+              alt="plane"
+            />
+          </figure>
+      </section>
+    </main>
+
+    <script src="/assets/js/minigames/main.js"></script>
+    <script src="/assets/js/minigames/pilot.js"></script>
+  </body>
+</html>
